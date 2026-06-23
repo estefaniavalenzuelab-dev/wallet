@@ -1,0 +1,238 @@
+body {
+    background-color: s#262b30;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #222121;
+    margin:auto
+}
+ 
+}
+/* encabezado menú */
+.container-{breakpoint} {
+    width: 900px;
+
+}
+/*
+.container-fluid contenedor-principal {
+    width: 5%;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    font-size: auto;
+    margin: auto;
+    */
+
+
+/* cuerpo de login */
+.row {
+margin: auto;
+padding-top: 10px;
+padding-right: 20px;
+padding-bottom: 10px;
+padding-left: 20px;
+background-color: #2a2e31;
+border-radius: 10px;
+}
+
+.card {
+    margin: 3px;
+}
+
+.footer {
+    text-align: center;
+    padding: auto;
+    margin: auto;
+}
+
+/* Login */
+
+.container-padre {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+.mi-container {
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+width: 500px;
+max-width: 400px;
+background-color: rgb(188, 188, 197);
+border-radius: 8px;
+box-shadow: 0px 4px 10px rgba(0,0, 0, 0.1);
+padding: 40px 20px;
+border: 1px solid rgb(189, 182, 173);
+box-sizing: border-box;
+}
+@media (max-width: 768px) {
+  .mi-container {
+   max-width: 100%;
+   padding: 20px;
+    }
+    
+.container-padre h1 {
+  font-size: 28px;
+    }
+}
+
+.botonLogin {
+    display: flex;
+    justify-content: center;
+}
+
+.dropdown-divider {
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+}
+
+/* menu.html */
+
+/*Barra de navegacion*/
+.card-header {
+    background-color: #4643438f;
+    border-radius: 20px;
+    opacity: 0.9;
+}
+
+/*container saldo*/
+.card-header {
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 70px;
+    padding-bottom: 15px;
+    border-radius: 8px;
+}
+
+.card-body {
+    max-width: auto;
+    margin-top: auto;
+    padding-bottom: 15px;
+}
+
+/*interactividad saldo, ojo,etc*/
+.saldo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+
+.saldo-container h2 {
+    margin: 0;
+}
+
+#saldo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.saldo-oculto {
+    color: #999;
+}
+
+.btn-ojo {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    padding-bottom: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    transition: 0.2s;
+}
+
+.btn-ojo:hover {
+    color: #0d6efd;
+}
+
+.btn-ojo svg {
+    width: 20px;
+    height: 20px;
+}
+/* carrusel de ofertas*/
+#carouselExampleDark {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#carouselExampleDark .carousel-inner {
+    border-radius: 8px;
+    overflow: hidden;
+}
+/*Imagenes carrusel*/
+#carouselExampleDark img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+   justify-content: center;
+}
+
+#carouselExampleDark .carousel-caption {
+    bottom: 10px;
+    padding: 10px;
+}
+/*texto carrusel*/
+#carouselExampleDark .carousel-caption h5 {
+    font-size: 16px;
+    margin: 0;
+    color: rgb(255, 255, 255);
+}
+
+#carouselExampleDark .carousel-caption p {
+    font-size: 12px;
+    margin: 0;
+    color: rgb(255, 255, 255);
+}
+/*Flechas del carrusel*/
+#carouselExampleDark .carousel-control-prev-icon,
+#carouselExampleDark .carousel-control-next-icon {
+    width: 30px;
+    filter: invert(1) brightness(1.2);
+}
+
+#carouselExampleDark .carousel-indicators {
+    bottom: 5px;
+    filter: invert(1) brightness(1.2);
+}
+
+#carouselExampleDark .carousel-indicators button {
+    width: 8px;
+    height: 8px;
+}
+
+/*Toast (notif.)*/
+.toast-container {
+    width: 350px;
+    max-width: 350px;
+    margin-top: -550px;
+}
+.toast {
+   opacity: 0.7; 
+}
+.toast-header {
+     opacity: 0.5;
+     filter: invert(1) brightness(1.2);
+}
+.toast-body
+ {
+    padding: 10px;
+ }
+.position-relative {
+width: 100%;
+}
+
+/*deposito.html*/
+.container {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: #1E2226;
+}
