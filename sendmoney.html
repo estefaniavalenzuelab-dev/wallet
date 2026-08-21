@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Wallet-Transferir</title>
+    </head>
+    <body>
+<!--Barra de navegación-->
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <h1><a class="navbar-brand" href="#">Alke Wallet</a></h1>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Alke Wallet</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <form class="d-flex mt-3" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+          <button class="btn btn-success" type="submit">Search</button>
+        </form>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="menu.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Más
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="deposit.html">Depositar</a></li>
+              <li><a class="dropdown-item" href="sendmoney.html">Enviar Dinero</a></li>
+              <li><a class="dropdown-item" href="transactions.html">Historial de Transacciones</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="login.html">Cerrar Sesion</a></li>
+            </ul>
+          </li>
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+    </nav>
+
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .container-sendMoney { max-width: 720px; margin: 32px auto; }
+    .contact-info { display:flex; flex-direction:column; gap:4px; }
+    .contact-row { display:flex; justify-content:space-between; align-items:center; gap:12px; }
+    .contact-actions { min-width:160px; text-align:right; }
+  </style>
+</head>
+<body>
+  <div class="container-sendMoney container" id="Agenda">
+    <h2>Enviar Dinero</h2>
+
+    <form id="mainForm" onsubmit="return false;">
+      <div class="mb-3">
+        <label for="searchContact" class="form-label">Agenda de transferencias:</label>
+        <input type="text" class="form-control" id="searchContact" placeholder="Buscar contacto">
+      </div>
+
+      <div class="mb-3">
+        <button type="button" id="addContactBtn" class="btn btn-primary">Agregar nuevo contacto</button>
+        <button type="button" id="sendMoneyBtn" class="btn btn-success">Enviar dinero</button>
+      </div>
+    </form>
+
+    <h3 class="mt-4">Contactos</h3>
+    <ul id="contactList" class="list-group"></ul>
+
+    <a href="menu.html" class="btn btn-secondary mt-3">Volver al Menú Principal</a>
+  </div>
+     
+<div class="modal fade" id="newContactModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Nuevo contacto</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <form id="modalContactForm" onsubmit="return false;">
+            <div class="mb-2">
+              <label for="contactName" class="form-label">Nombre</label>
+              <input type="text" id="contactName" class="form-control" placeholder="Ej: Patricio Barahona" required>
+            </div>
+            <div class="mb-2">
+              <label for="contactCBU" class="form-label">CBU</label>
+              <input type="text" id="contactCBU" class="form-control" placeholder="Ej: 1234567890123456789012">
+            </div>
+            <div class="mb-2">
+              <label for="contactAlias" class="form-label">Alias</label>
+              <input type="text" id="contactAlias" class="form-control" placeholder="Ej: patricio.barahona">
+            </div>
+            <div class="mb-2">
+              <label for="contactBank" class="form-label">Banco</label>
+              <input type="text" id="contactBank" class="form-control" placeholder="Ej: Banco Falabella">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="modalCancelBtn" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" id="modalSaveBtn" class="btn btn-primary">Guardar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Modal 2-->
+  <!-- Modal: Enviar dinero -->
+<div class="modal fade" id="sendMoneyModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Enviar dinero</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <div>
+          <p><strong>Contacto:</strong> <span id="sendContactName">-</span></p>
+          <p class="text-muted small"><span id="sendContactDetails"></span></p>
+        </div>
+        <form id="sendMoneyForm" onsubmit="return false;">
+          <div class="mb-3">
+            <label for="sendAmountInput" class="form-label">Monto</label>
+            <input type="number" min="0.01" step="0.01" class="form-control" id="sendAmountInput" placeholder="Ej: 1000" required>
+          </div>
+          <div class="mb-3">
+            <label for="sendNoteInput" class="form-label">Notas (opcional)</label>
+            <input type="text" class="form-control" id="sendNoteInput" placeholder="Concepto">
+          </div>
+        </form>
+        <div id="sendMoneyError" class="text-danger small" style="display:none;"></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" id="sendMoneyCancelBtn" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        <button type="button" id="sendMoneyConfirmBtn" class="btn btn-primary">Enviar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <footer>
+        "&#169;" Alke Wallet, Estefania Valenzuela 2026.
+    </footer>
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>                   
+  <script src="./assets/js/script.js"></script>
+        
+    </body>
+</html>

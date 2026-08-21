@@ -1,165 +1,380 @@
-<!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-        <link rel="stylesheet" href="assets/css/style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Wallet</title>
-    </head>
-    <body>
-<!--Barra de navegación-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wallet</title>
+  </head>
+  <body class="container mx-auto px-4">
+    
+    <header class="col-span-1 md:colspan-3 gap-4">
+    <!--Barra de navegación-->
     <nav class="navbar navbar-dark bg-dark fixed-top">
-  <div class="container-fluid">
-    <h1><a class="navbar-brand" href="#">Alke Wallet</a></h1>
-    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Alke Wallet</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <form class="d-flex mt-3" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-          <button class="btn btn-success" type="submit">Search</button>
-        </form>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="menu.html">Home</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Más
-            </a>
-            <ul class="dropdown-menu dropdown-menu-dark">
-                <li><a class="dropdown-item" href="deposit.html">Depositar</a></li>
-              <li><a class="dropdown-item" href="sendmoney.html">Enviar Dinero</a></li>
-              <li><a class="dropdown-item" href="transactions.html">Historial de Transacciones</a></li>
-              <li>
-                <hr class="dropdown-divider">
+      <div class="container-fluid">
+        <img src="./assets/img/logo Alke wallet.png" alt="logo Alke Wallet" h-10 w-auto>
+        <h1><a class="navbar-brand" href="menu.html">Alke Wallet</a></h1>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end text-bg-dark"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+              Alke Wallet
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <form class="d-flex mt-3" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-success" type="submit">Search</button>
+          </form>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="menu.html"
+                  >Home</a
+                >
               </li>
-              <li><a class="dropdown-item" href="login.html">Cerrar Sesion</a></li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Más
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li>
+                    <a class="dropdown-item" href="deposit.html">Depositar</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="sendmoney.html"
+                      >Enviar Dinero</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="transactions.html"
+                      >Movimientos</a
+                    >
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="login.html">Cerrar Sesion</a>
+                  </li>
+                </ul>
+              </li>
             </ul>
-          </li>
-        </ul>
-        
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
     </nav>
+    </header>
 
+    <main class="col-span-2 bg-white p-4 shadow">      
+          <!--container saldo-->
+          <div class="card text-center">
+            <div class="card-header">
+              <ul class="nav nav-pills card-header-pills">
+                <li class="nav-item">
+                  <a class="nav-link active" href="menu.html">Saldo</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Reservas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" aria-disabled="true"
+                    >Datos de cuenta</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="card-body">
+              <p>Saldo disponible:</p>
+              <div class="saldo-container">
+                <h2><span id="saldo" class="saldo-oculto">****</span></h2>
+                <button id="btnMostrarSaldo" class="btn-ojo">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                    class="bi bi-eye-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                    <path
+                      d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <a href="deposit.html" id="btnDinero" class="btn btn-primary"
+                >Ingresar Dinero</a>
+              
 
-    <!--container saldo-->
-     <div class="card text-center">
-  <div class="card-header">
-    <ul class="nav nav-pills card-header-pills">
-      <li class="nav-item">
-        <a class="nav-link active" href="menu.html">Saldo</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Reservas</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" aria-disabled="true">Datos de cuenta</a>
-      </li>
-    </ul>
-  </div>
-  <div class="card-body">
-    <p>Saldo disponible: </p>
-    <div class="saldo-container">
-   <h2><span id="saldo" class="saldo-oculto">****</span></h2>
-        <button id="btnMostrarSaldo" class="btn-ojo">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
-            <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
-            <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
-          </svg>
-    </button>
-  </div>
-    <a href="deposit.html" class="btn btn-primary">Ingresar Dinero</a>
-  </div>
-    </div>   
+            </div>
+          </div>
 
-<!--Carrusel-->
-    <div id="carouselExampleDark" class="carousel carousel-dark slide">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active" data-bs-interval="2000">
-      <img src="assets\img\Banner 1.png" class="d-block w-100" alt="Banner para Alke Wallet">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Alke Beneficios</h5>
-        <p>Disfruta de beneficios que solo tu Alke Wallet te puede ofrecer.</p>
-      </div>
-    </div>
-    <div class="carousel-item" data-bs-interval="2000">
-      <img src="assets\img\Banner 2.png" class="d-block w-100" alt="Banner Alke Premium">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Alke Premium</h5>
-        <p>Tu estilo de vida merece más, Disfruta de Alke Premium.</p>
-      </div>
-    </div>
-    <div class="carousel-item" data-bs-interval="2000">
-      <img src="assets\img\Banner 3.png" class="d-block w-100" alt="Banner Alke Credito">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Alke Crédito</h5>
-        <p>Mas libertad. Más oportunidades. Solo con Alke Crédito.</p>
-      </div>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-    </div>
+    <!--Bontones de redireccion-->
+            <div class="col-span-1 bg-gray-100 p-4">      
+                  <div class="container-boton flex flex-row flex-nowrap justify-center gap-2 w-full px-2">
+                    <div class="opcion opcion flex-1 min-w-0 text-xs md:text-base py-2 px-3 bg-blue-600 text-white rounded truncate">
+                      <button class="boton-redondo" href="./deposit.html">
+                        <img
+                          src="assets\img\send_money_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"
+                          id="btnSendmoney"
+                          alt="icono"
+                        />
+                      </button>
+                      <p class="pboton">Transferir</p>
+                    </div>
+                    <div class="opcion opcion flex-1 min-w-0 text-xs md:text-base py-2 px-3 bg-blue-600 text-white rounded truncate">
+                      <button class="boton-redondo">
+                        <img
+                          src="assets\img\payment_arrow_down_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"
+                          id="btnDeposit"
+                          alt="icono"
+                        />
+                      </button>
+                      <p class="pboton" >Depositar</p>
+                    </div>
+                    <div class="opcion opcion flex-1 min-w-0 text-xs md:text-base py-2 px-3 bg-blue-600 text-white rounded truncate">
+                      <button class="boton-redondo" id="btnCircleTransactions">
+                        <img
+                          src="assets\img\history_2_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"
+                          id="btnTransactions"
+                          alt="icono"
+                        />
+                      </button>
+                      <p class="pboton">Movimientos</p>
+                    </div>
+                  </div>
+
+                  <div class="container-boton2 flex flex-row flex-nowrap justify-center gap-2 w-full px-2">
+                    <div class="opcion flex-1 min-w-0 text-xs md:text-base py-2 px-3 bg-blue-600 text-white rounded truncate">
+                      <button class="boton-redondo">
+                        <img
+                          src="assets\img\add_business_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"
+                          id="btnFantasma"
+                          alt="icono"
+                        />
+                      </button>
+                      <p class="pboton">Servicios</p>
+                    </div>
+                    <div class="opcion opcion flex-1 min-w-0 text-xs md:text-base py-2 px-3 bg-blue-600 text-white rounded truncate">
+                      <button class="boton-redondo">
+                        <img
+                          src="assets\img\percent_discount_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"
+                          id="btnFantasma"
+                          alt="icono"
+                        />
+                      </button>
+                      <p class="pboton">Beneficios</p>
+                    </div>
+                    <div class="opcion opcion flex-1 min-w-0 text-xs md:text-base py-2 px-3 bg-blue-600 text-white rounded truncate">
+                      <button class="boton-redondo">
+                        <img
+                          src="assets\img\paid_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"
+                          id="btnCobrar"
+                          alt="icono"
+                        />
+                      </button>
+                      <p class="pboton">Cobrar</p>
+                    </div>
+                  </div>
+            </div>
+
+          <!--Carrusel (ajustar posicion de imagenes)-->
+          <div id="carouselExampleDark" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="2000">
+                <img
+                  src="assets\img\Banner 1.png"
+                  class="d-block w-100"
+                  alt="Banner para Alke Wallet"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Alke Beneficios</h5>
+                  <p>
+                    Disfruta de beneficios que solo tu Alke Wallet te puede ofrecer.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img
+                  src="assets\img\Banner 2.png"
+                  class="d-block w-100"
+                  alt="Banner Alke Premium"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Alke Premium</h5>
+                  <p>Tu estilo de vida merece más, Disfruta de Alke Premium.</p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img
+                  src="assets\img\Banner 3.png"
+                  class="d-block w-100"
+                  alt="Banner Alke Credito"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Alke Crédito</h5>
+                  <p>Mas libertad. Más oportunidades. Solo con Alke Crédito.</p>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </main>
+
+   
 
 
     <!--notificaciones-->
-        <div aria-live="polite" aria-atomic="true" class="position-relative">
-        <!-- Position it: -->
-        <!-- - `.toasst-container` for spacing between toasts -->
-        <!-- - `top-0` & `end-0` to position the toasts in the upper right corner -->
-        <!-- - `.p-3` to prevent the toasts from sticking to the edge of the container  -->
-        <div class="toast-container top-0 end-0 p-3">
-
-            <!-- Then put toasts within -->
-            <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-            <div class="toast-header">
-                <img src="assets\img\credit-card_3211504.png" id="toastImg" class="rounded me-2" alt="Tarjeta Alke Crédito">
-                <strong class="me-auto">Estas precalificado para Alke Crédito</strong>
-                <small class="text-body-secondary">just now</small>
-                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-            </div>
-            <div class="toast-body">
-                Facilita tu vida y accede a mejores beneficios...
-            </div>
-            </div>
-
-            <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-            <div class="toast-header">
-                <img src="assets\img\shoppping-bag_17167612.png" id="toastImg" class="rounded me-2" alt="Alke billetera">
-                <strong class="me-auto">¡Tenemos mucho que ofrecerte!</strong>
-                <small class="text-body-secondary">2 seconds ago</small>
-                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-            </div>
-            <div class="toast-body">
-                Conoce los Beneficios de tu app Alke Wallet
-            </div>
-            </div>
+    <div aria-live="polite" aria-atomic="true" class="position-relative">
+      <!-- Position it: -->
+      <!-- - `.toasst-container` for spacing between toasts -->
+      <!-- - `top-0` & `end-0` to position the toasts in the upper right corner -->
+      <!-- - `.p-3` to prevent the toasts from sticking to the edge of the container  -->
+      <div class="toast-container top-0 end-0 p-3">
+        <!-- Then put toasts within -->
+        <div
+          class="toast"
+          role="alert"
+          aria-live="assertive"
+          aria-atomic="true"
+        >
+          <div class="toast-header">
+            <img
+              src="assets\img\credit-card_3211504.png"
+              id="toastImg"
+              class="rounded me-2"
+              alt="Tarjeta Alke Crédito"
+            />
+            <strong class="me-auto"
+              >Estas precalificado para Alke Crédito</strong
+            >
+            <small class="text-body-secondary">just now</small>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="toast"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="toast-body">
+            Facilita tu vida y accede a mejores beneficios...
+          </div>
         </div>
+
+        <div
+          class="toast"
+          role="alert"
+          aria-live="assertive"
+          aria-atomic="true"
+        >
+          <div class="toast-header">
+            <img
+              src="assets\img\shoppping-bag_17167612.png"
+              id="toastImg"
+              class="rounded me-2"
+              alt="Alke billetera"
+            />
+            <strong class="me-auto">¡Tenemos mucho que ofrecerte!</strong>
+            <small class="text-body-secondary">2 seconds ago</small>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="toast"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="toast-body">
+            Conoce los Beneficios de tu app Alke Wallet
+          </div>
         </div>
-                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-                <script src="./assets/js/script.js"></script>
-    <footer>
-        "&#169;" Alke Wallet, Estefania Valenzuela 2026.
-    </footer>
-    </body>
+      </div>
+    </div>
+    
+    <footer>"&#169;" Alke Wallet, Estefania Valenzuela 2026.</footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
 </html>
