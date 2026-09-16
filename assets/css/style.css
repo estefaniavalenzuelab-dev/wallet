@@ -63,17 +63,14 @@ body {
 
 /*container saldo*/
 .card-header {
-  display: flexbox;
   justify-content: center;
   align-items: center;
   margin-top: 20px;
-  padding: 70px;
-  padding-bottom: 15px;
+  padding: 35px 45px 15px;
   border-radius: 8px;
 }
 
 .card-body {
-  max-width: auto;
   margin-top: auto;
   padding-bottom: 15px;
 }
@@ -121,151 +118,67 @@ body {
   width: 20px;
   height: 20px;
 }
+
+/* Saludo usuario */
+.saludo-container {
+  text-align: center;
+  padding: 18px 15px 5px;
+}
+
+#saludoUsuario {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 2px;
+  color: #212529;
+}
+
+.saludo-container span {
+  font-size: 15px;
+  color: #6c757d;
+}
+
+@media (max-width: 576px) {
+  #saludoUsuario {
+    font-size: 22px;
+  }
+
+  .saludo-container span {
+    font-size: 13px;
+  }
+}
+
 /*botones de redirección con imagen*/
-
-.container-boton {
-  display: flex;
-  width: 100%;
-  padding: 25px;
-  box-sizing: border-box;
-  align-items: center;
-  background-color: #4643438f;
-  color: #ffffff;
-  flex-wrap: wrap;
-  gap: 15px;
-}
-.container-boton2 {
-  display: flex;
-  padding: 40px;
-  box-sizing: border-box;
-  align-items: center;
-  background-color: #4643438f;
-  color: #ffffff;
-  flex-wrap: wrap;
-  gap: 15px;
+main {
+  margin-top: 44px;
 }
 
-.option {
-    flex: 0 a auto;
-}
 
-.boton-redondo {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%; /*lo vuelve circular*/
-  border: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  background-color: #f0f0f0;
-  cursor: pointer;
-  padding: 12px;
-  box-sizing: border-box;
-  color: #ffffff;
-  margin-left: 40px;
-}
+@media (max-width: 576px) {
+  main {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
 
-.boton-redondo img {
-  width: 30px;
-  height: 30px;
-  filter: invert(1) brightness(1.2);
-  object-fit: contain;
-}
+  .boton-redondo {
+    width: 52px;
+    height: 52px;
+  }
 
-.pboton {
-    margin: 0;
-    font-size: 12px;
-    text-align: right;
-    margin-top: 5px;
-}
+  .boton-redondo img {
+    width: 24px;
+    height: 24px;
+  }
 
-/*pantallas pequeñas*/
-@media (max-width: 767px) {
-    .container-boton,
-    .container-boton2 {
-        gap: 10px;
-        padding: 15px;
-        justify-content: center;
-    }
-    .boton-redondo {
-        margin-left: 20px;
-    }
-    .pboton {
-        font-size: 11px;
-    }
-}
+  .pboton {
+    font-size: 0.8rem;
+  }
 
-/*pantallas muy pequeñas*/
-@media (max-width: 480px) {
-    .container-boton,
-    .container-boton2 {
-        gap: 8px;
-        padding: 10px;
-        justify-content: center;
-    }
-    .boton-redondo {
-        margin-left: 4px;
-        margin-right: 4px;
-    }
-    .pboton {
-        font-size: 10px;
-    }
+  .card-header .nav {
+    font-size: 0.8rem;
+  }
 }
 
 /* carrusel de ofertas*/
-#carouselExampleDark {
-  width: 100%;
-  max-width: 600px;
-  padding: 16px;
-  margin: 0;
-  margin-top: -350px;
-  padding-right: 50px;
-}
-
-/* En pantallas grandes*/
-@media (min-width: 992px) {
-  #carouselExampleDark {
-    margin-left: auto;
-    margin-right: 0;
-    margin-top: -330px;
-    padding-right: 50px;
-    width: 600px;
-    position: relative;
-  }
-}
-/*En pantallas medianas*/
-@media (min-width: 768px) and (max-width: 991px) {
-  #carouselExampleDark {
-    margin: -30px auto 20px auto;
-    padding-right: 50px;
-    width: 90%;
-    max-width: 500px;
-    position: relative;
-  }
-}
-/*En pantallas pequeñas*/
-@media (min-width: 576px) and (max-width: 767px) {
-  #carouselExampleDark {
-    margin: -30px auto 20px auto;
-    padding-right: 30px;
-    width: 95%;
-    max-width: 100%;
-    position: relative;
-  }
-}
-/*En pantallas muy pequeñas*/
-@media (max-width: 575px) {
-  #carouselExampleDark {
-    width: 100%;
-    max-width: 100%;
-    margin: -30px 0 15px 0;
-    padding: 12px;
-    padding-right: 20px;
-    position: relative;
-  }
-}
-
 #carouselExampleDark .carousel-inner {
   border-radius: 8px;
   overflow: hidden;
@@ -354,6 +267,94 @@ body {
   }
 }
 
+/*MENU: BOTONES + PUBLICIDAD*/
+
+.seccion-menu {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.acciones-menu {
+  flex: 0 0 42%;
+  max-width: 42%;
+}
+
+.publicidad-menu {
+  flex: 1;
+  min-width: 0;
+}
+
+/* BOTONES */
+
+.boton-redondo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #0d6efd;
+}
+
+.boton-redondo img {
+  width: 28px;
+  height: 28px;
+}
+
+.pboton {
+  margin-top: 8px;
+  margin-bottom: 0;
+  font-size: 0.9rem;
+}
+
+/* CARRUSEL */
+
+#carouselExampleDark {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+#carouselExampleDark .carousel-inner {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#carouselExampleDark .carousel-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  .seccion-menu {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .acciones-menu,
+  .publicidad-menu {
+    flex: 0 0 100%;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #carouselExampleDark {
+    max-width: 100%;
+  }
+}
+
 /*Toast (notif.)*/
 .toast-container {
   width: 350px;
@@ -375,36 +376,143 @@ body {
 }
 
 /*deposito.html*/
-.container {
-  margin-top: 10px;
-  margin-bottom: 15px;
-  color: #1e2226;
+/* ================================
+   DEPOSIT.HTML
+================================ */
+
+.deposit-container {
+  width: 100%;
+  max-width: 650px;
+
+  margin: 110px auto 40px;
+
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-/*Tabla de Movimientos transactions.html*/
-.table-movimientos {
-  display: flexbox;
-  flex-direction: column;
-  padding: 100px;
-  color: #999;
+.deposit-container .card {
+  border-radius: 12px;
 }
-@media (min-width: 768px) {
-  .table-movimientos {
-    flex-direction: row;
+
+.deposit-container .card-header {
+  padding: 20px;
+
+  margin-top: 0;
+}
+
+.deposit-container .card-body {
+  padding: 25px;
+}
+
+.deposit-actions {
+  display: flex;
+  gap: 10px;
+
+  margin-top: 20px;
+}
+
+/* CELULAR */
+
+@media (max-width: 576px) {
+  .deposit-container {
+    margin-top: 90px;
+
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .deposit-container .card-body {
+    padding: 20px;
+  }
+
+  .deposit-actions {
+    flex-direction: column;
+  }
+
+  .deposit-actions .btn {
+    width: 100%;
   }
 }
 
+#totalIngresos,
+#totalEgresos {
+  font-weight: 700;
+}
 
-/*SendMoney*/
- /*container-sendMoney*/
+/*SENDMONEY*/
+/*container-sendMoney*/
 
- #Agenda {
+#Agenda {
   margin-top: 90px;
- }
+}
 
+/* TRANSACTIONS.HTML */
 
- /*TRANSACTIONS*/
- #listaMovimientos {
-  margin-top: 90px;
-  background-color: rgb(188, 188, 197);
- }
+.movimientos-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 100px auto 40px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Tarjetas resumen */
+.movimientos-container .card {
+  border-radius: 10px;
+}
+
+.movimientos-container .card-body {
+  padding: 20px;
+}
+
+/* Lista */
+#listaMovimientos {
+  margin-top: 0;
+}
+
+#listaMovimientos .list-group-item {
+  transition: background-color 0.2s ease;
+  gap: 15px;
+}
+
+#listaMovimientos .list-group-item:hover {
+  background-color: #f8f9fa;
+}
+
+/* Botón volver */
+#btnVolverPrincipal {
+  margin-bottom: 30px;
+}
+
+/* CELULAR */
+@media (max-width: 576px) {
+  .movimientos-container {
+    margin-top: 90px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .movimientos-container h2 {
+    font-size: 1.6rem;
+  }
+
+  .movimientos-container > div:first-child p {
+    font-size: 0.9rem;
+  }
+
+  /* Los movimientos se apilan */
+  #listaMovimientos .list-group-item {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+
+  /* El monto queda a la derecha */
+  #listaMovimientos .list-group-item > strong {
+    align-self: flex-end;
+  }
+
+  #btnVolverPrincipal {
+    width: 100%;
+  }
+}
+

@@ -13,209 +13,282 @@
     <title>Wallet</title>
   </head>
   <body class="container mx-auto px-4">
-    
     <header class="col-span-1 md:colspan-3 gap-4">
-    <!--Barra de navegación-->
-    <nav class="navbar navbar-dark bg-dark fixed-top">
-      <div class="container-fluid">
-        <img src="./assets/img/logo Alke wallet.png" alt="logo Alke Wallet" h-10 w-auto>
-        <h1><a class="navbar-brand" href="menu.html">Alke Wallet</a></h1>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasDarkNavbar"
-          aria-controls="offcanvasDarkNavbar"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="offcanvas offcanvas-end text-bg-dark"
-          tabindex="-1"
-          id="offcanvasDarkNavbar"
-          aria-labelledby="offcanvasDarkNavbarLabel"
-        >
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
-              Alke Wallet
-            </h5>
-            <button
-              type="button"
-              class="btn-close btn-close-white"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-          </div>
-          <form class="d-flex mt-3" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-success" type="submit">Search</button>
-          </form>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="menu.html"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Más
-                </a>
-                <ul class="dropdown-menu dropdown-menu-dark">
-                  <li>
-                    <a class="dropdown-item" href="deposit.html">Depositar</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="sendmoney.html"
-                      >Enviar Dinero</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="transactions.html"
-                      >Movimientos</a
-                    >
-                  </li>
-                  <li>
-                    <hr class="dropdown-divider" />
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="login.html">Cerrar Sesion</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </nav>
-    </header>
-
-    <main class="col-span-2 bg-white p-4 shadow">      
-          <!--container saldo-->
-          <div class="card text-center">
-            <div class="card-header">
-              <ul class="nav nav-pills card-header-pills">
+      <!--Barra de navegación-->
+      <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <img
+            src="./assets/img/Logo.png"
+            alt="logo Alke Wallet"
+            class="h-10 w-auto"
+          />
+          <h1><a class="navbar-brand" href="menu.html">Alke Wallet</a></h1>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasDarkNavbar"
+            aria-controls="offcanvasDarkNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end text-bg-dark"
+            tabindex="-1"
+            id="offcanvasDarkNavbar"
+            aria-labelledby="offcanvasDarkNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+                Alke Wallet
+              </h5>
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <form class="d-flex mt-3" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-success" type="submit">Search</button>
+            </form>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link active" href="menu.html">Saldo</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Reservas</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" aria-disabled="true"
-                    >Datos de cuenta</a
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="menu.html"
+                    >Home</a
                   >
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Más
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li>
+                      <a class="dropdown-item" href="deposit.html">Depositar</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="sendmoney.html"
+                        >Enviar Dinero</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="transactions.html"
+                        >Movimientos</a
+                      >
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="login.html"
+                        >Cerrar Sesion</a
+                      >
+                    </li>
+                  </ul>
                 </li>
               </ul>
             </div>
-            <div class="card-body">
-              <p>Saldo disponible:</p>
-              <div class="saldo-container">
-                <h2><span id="saldo" class="saldo-oculto">****</span></h2>
-                <button id="btnMostrarSaldo" class="btn-ojo">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    fill="currentColor"
-                    class="bi bi-eye-fill"
-                    viewBox="0 0 16 16"
-                  >
-                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
-                    <path
-                      d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"
-                    />
-                  </svg>
-                </button>
-              </div>
-              <a href="deposit.html" id="btnDinero" class="btn btn-primary"
-                >Ingresar Dinero</a>
-              
+          </div>
+        </div>
+      </nav>
+    </header>
 
+    <main class="col-span-2 bg-white p-4 shadow">
+      <!--container saldo-->
+      <div class="card text-center">
+        <div class="card-header">
+          <ul class="nav nav-pills card-header-pills">
+            <li class="nav-item">
+              <a class="nav-link active" href="#" id="btnSaldo">Saldo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="btnRetirar">Retirar Dinero</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true"
+                >Datos de cuenta</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="saludo-container">
+          <p id="saludoUsuario"></p>
+          <span>Qué bueno verte 😊</span>
+        </div>
+
+        <div class="card-body">
+          <div id="contenidoSaldo">
+            <p>Saldo disponible:</p>
+
+            <div class="saldo-container">
+              <h2>
+                <span id="saldo" class="saldo-oculto">****</span>
+              </h2>
+
+              <!-- boton ojito -->
+              <button id="btnMostrarSaldo" class="btn-ojo">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-eye-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                  <path
+                    d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <a id="btnDinero" class="btn btn-primary">Ingresar Dinero</a>
+
+            <p id="mensaje" class="text-center fw-bold mt-3"></p>
+          </div>
+
+          <!-- Retirar dinero -->
+          <div id="contenidoRetiro" style="display: none">
+            <div class="mb-3">
+              <label for="montoRetiro" class="form-label"
+                >Monto a retirar</label
+              >
+
+              <input
+                type="number"
+                class="form-control"
+                id="montoRetiro"
+                placeholder="0"
+                min="1"
+              />
+            </div>
+
+            <button
+              type="button"
+              id="btnConfirmarRetiro"
+              class="btn btn-primary"
+            >
+              Retirar
+            </button>
+
+            <p id="mensajeRetiro" class="mt-3"></p>
+          </div>
+        </div>
+      </div>
+      <!-- BOTONES + CARRUSEL -->
+
+      <div class="seccion-menu">
+        <div class="acciones-menu">
+          <!--Bontones de redireccion-->
+          <div class="container my-4">
+            <div class="row g-3 text-center">
+              <!-- TRANSFERIR -->
+              <div class="col-4">
+                <button type="button" class="boton-redondo" id="btnSendmoney">
+                  <img
+                    src="assets/img/send_money_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"
+                    alt="Transferir"
+                  />
+                </button>
+
+                <p class="pboton">Transferir</p>
+              </div>
+
+              <!-- DEPOSITAR -->
+              <div class="col-4">
+                <button type="button" class="boton-redondo" id="btnDeposit">
+                  <img
+                    src="assets/img/payment_arrow_down_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"
+                    alt="Depositar"
+                  />
+                </button>
+
+                <p class="pboton">Depositar</p>
+              </div>
+
+              <!-- MOVIMIENTOS -->
+              <div class="col-4">
+                <button
+                  type="button"
+                  class="boton-redondo"
+                  id="btnCircleTransactions"
+                >
+                  <img
+                    src="assets/img/history_2_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"
+                    alt="Movimientos"
+                  />
+                </button>
+
+                <p class="pboton">Movimientos</p>
+              </div>
             </div>
           </div>
 
-    <!--Bontones de redireccion-->
-            <div class="col-span-1 bg-gray-100 p-4">      
-                  <div class="container-boton flex flex-row flex-nowrap justify-center gap-2 w-full px-2">
-                    <div class="opcion opcion flex-1 min-w-0 text-xs md:text-base py-2 px-3 bg-blue-600 text-white rounded truncate">
-                      <button class="boton-redondo" href="./deposit.html">
-                        <img
-                          src="assets\img\send_money_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"
-                          id="btnSendmoney"
-                          alt="icono"
-                        />
-                      </button>
-                      <p class="pboton">Transferir</p>
-                    </div>
-                    <div class="opcion opcion flex-1 min-w-0 text-xs md:text-base py-2 px-3 bg-blue-600 text-white rounded truncate">
-                      <button class="boton-redondo">
-                        <img
-                          src="assets\img\payment_arrow_down_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"
-                          id="btnDeposit"
-                          alt="icono"
-                        />
-                      </button>
-                      <p class="pboton" >Depositar</p>
-                    </div>
-                    <div class="opcion opcion flex-1 min-w-0 text-xs md:text-base py-2 px-3 bg-blue-600 text-white rounded truncate">
-                      <button class="boton-redondo" id="btnCircleTransactions">
-                        <img
-                          src="assets\img\history_2_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"
-                          id="btnTransactions"
-                          alt="icono"
-                        />
-                      </button>
-                      <p class="pboton">Movimientos</p>
-                    </div>
-                  </div>
+          <div class="container mb-4">
+            <div class="row g-3 text-center">
+              <div class="col-4">
+                <button type="button" class="boton-redondo">
+                  <img
+                    src="assets/img/add_business_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"
+                    alt="Servicios"
+                  />
+                </button>
 
-                  <div class="container-boton2 flex flex-row flex-nowrap justify-center gap-2 w-full px-2">
-                    <div class="opcion flex-1 min-w-0 text-xs md:text-base py-2 px-3 bg-blue-600 text-white rounded truncate">
-                      <button class="boton-redondo">
-                        <img
-                          src="assets\img\add_business_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"
-                          id="btnFantasma"
-                          alt="icono"
-                        />
-                      </button>
-                      <p class="pboton">Servicios</p>
-                    </div>
-                    <div class="opcion opcion flex-1 min-w-0 text-xs md:text-base py-2 px-3 bg-blue-600 text-white rounded truncate">
-                      <button class="boton-redondo">
-                        <img
-                          src="assets\img\percent_discount_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"
-                          id="btnFantasma"
-                          alt="icono"
-                        />
-                      </button>
-                      <p class="pboton">Beneficios</p>
-                    </div>
-                    <div class="opcion opcion flex-1 min-w-0 text-xs md:text-base py-2 px-3 bg-blue-600 text-white rounded truncate">
-                      <button class="boton-redondo">
-                        <img
-                          src="assets\img\paid_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"
-                          id="btnCobrar"
-                          alt="icono"
-                        />
-                      </button>
-                      <p class="pboton">Cobrar</p>
-                    </div>
-                  </div>
+                <p class="pboton">Servicios</p>
+              </div>
+
+              <div class="col-4">
+                <button type="button" class="boton-redondo">
+                  <img
+                    src="assets/img/percent_discount_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"
+                    alt="Beneficios"
+                  />
+                </button>
+
+                <p class="pboton">Beneficios</p>
+              </div>
+
+              <div class="col-4">
+                <button
+                  type="button"
+                  class="boton-redondo"
+                  id="btnCobrar"
+                  data-bs-toggle="modal"
+                  data-bs-target="#cobrarModal"
+                >
+                  <img
+                    src="assets/img/paid_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"
+                    alt="Cobrar"
+                  />
+                </button>
+
+                <p class="pboton">Cobrar</p>
+              </div>
             </div>
+          </div>
+        </div>
 
+        <!-- Area de publicidad -->
+        <div class="publicidad-menu">
           <!--Carrusel (ajustar posicion de imagenes)-->
           <div id="carouselExampleDark" class="carousel carousel-dark slide">
             <div class="carousel-indicators">
@@ -250,7 +323,8 @@
                 <div class="carousel-caption d-none d-md-block">
                   <h5>Alke Beneficios</h5>
                   <p>
-                    Disfruta de beneficios que solo tu Alke Wallet te puede ofrecer.
+                    Disfruta de beneficios que solo tu Alke Wallet te puede
+                    ofrecer.
                   </p>
                 </div>
               </div>
@@ -283,7 +357,10 @@
               data-bs-target="#carouselExampleDark"
               data-bs-slide="prev"
             >
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
               <span class="visually-hidden">Previous</span>
             </button>
             <button
@@ -292,23 +369,19 @@
               data-bs-target="#carouselExampleDark"
               data-bs-slide="next"
             >
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
               <span class="visually-hidden">Next</span>
             </button>
           </div>
+        </div>
+      </div>
     </main>
-
-   
-
-
     <!--notificaciones-->
     <div aria-live="polite" aria-atomic="true" class="position-relative">
-      <!-- Position it: -->
-      <!-- - `.toasst-container` for spacing between toasts -->
-      <!-- - `top-0` & `end-0` to position the toasts in the upper right corner -->
-      <!-- - `.p-3` to prevent the toasts from sticking to the edge of the container  -->
       <div class="toast-container top-0 end-0 p-3">
-        <!-- Then put toasts within -->
         <div
           class="toast"
           role="alert"
@@ -366,7 +439,94 @@
         </div>
       </div>
     </div>
-    
+
+    <!-- MODAL RECIBIR DINERO -->
+    <div
+      class="modal fade"
+      id="cobrarModal"
+      tabindex="-1"
+      aria-labelledby="cobrarModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-4 shadow">
+          <div class="modal-header">
+            <div>
+              <h5 class="modal-title fw-bold" id="cobrarModalLabel">
+                Recibir dinero
+              </h5>
+
+              <small class="text-muted"> Simula la recepción de fondos </small>
+            </div>
+
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Cerrar"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="receiveAmountInput" class="form-label">
+                Monto a recibir
+              </label>
+
+              <div class="input-group input-group-lg">
+                <span class="input-group-text">$</span>
+
+                <input
+                  type="number"
+                  id="receiveAmountInput"
+                  class="form-control"
+                  min="1"
+                  placeholder="0"
+                />
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="receiveNoteInput" class="form-label">
+                Concepto
+              </label>
+
+              <input
+                type="text"
+                id="receiveNoteInput"
+                class="form-control"
+                placeholder="Ej: Transferencia recibida"
+              />
+            </div>
+
+            <div
+              id="receiveMoneyError"
+              class="alert alert-danger"
+              style="display: none"
+            ></div>
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cancelar
+            </button>
+
+            <button
+              type="button"
+              id="receiveMoneyConfirmBtn"
+              class="btn btn-success"
+            >
+              Recibir dinero
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <footer>"&#169;" Alke Wallet, Estefania Valenzuela 2026.</footer>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>

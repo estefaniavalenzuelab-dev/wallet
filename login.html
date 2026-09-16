@@ -16,12 +16,31 @@
               <form class="px-4 py-3">
               <div class="mb-3">
               <label for="formEmail" class="form-label">Correo electronico</label>
-              <input type="email" class="form-control" id="Email" placeholder="email@example.com">
+              <input type="email" class="form-control" id="Email" placeholder="admin@gmail.com">
               </div>
               <div class="mb-3">
-              <label for="Password" class="form-label">Contraseña</label>
-              <input type="password" class="form-control" id="Password" placeholder="Password">
+              <label for="Password" class="form-label">
+                Contraseña
+              </label>
+
+              <div class="input-group">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="Password"
+                  placeholder="wm2"
+                  required
+                >
+
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary"
+                  id="btnVerPassword"
+                >
+                  Ver
+                </button>
               </div>
+            </div>
               <div class="mb-3">
                 <div class="form-check">
                 <input type="checkbox" class="form-check-input" id="dropdownCheck">
@@ -36,14 +55,114 @@
               </div>
             </form>
             <div class="dropdown-divider"></div>
-            <button type="submit" id="btnregistrar" class="btn btn-secondary" > Registrate aquí</button> 
-                    <br><br>
+            <button 
+            type="button"
+            id="btnregistrar"
+            class="btn btn-secondary"
+            data-bs-toggle="modal"
+            data-bs-target="#registroModal">Regístrate aquí</button>
+            <br><br>
             <button id="btnolvido" class="btn btn-secondary">¿Olvidaste tu contraseña?</button>
             </div>
     </section> 
      </div>
 </div>
      </div>
+
+<!-- Modal de registro -->
+        <div
+          class="modal fade"
+          id="registroModal"
+          tabindex="-1"
+          aria-labelledby="registroModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+              <div class="modal-header">
+                <h5 class="modal-title" id="registroModalLabel">
+                  Crear cuenta
+                </h5>
+
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Cerrar"
+                ></button>
+              </div>
+
+              <div class="modal-body">
+
+                <div class="mb-3">
+                  <label for="registroNombre" class="form-label">Nombre</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="registroNombre"
+                    placeholder="Ingresa tu nombre"
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label for="registroEmail" class="form-label">Correo electrónico</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="registroEmail"
+                    placeholder="email@example.com"
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label for="registroPassword" class="form-label">Contraseña</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="registroPassword"
+                    placeholder="Contraseña"
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label for="confirmarPassword" class="form-label">
+                    Confirmar contraseña
+                  </label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="confirmarPassword"
+                    placeholder="Repite la contraseña"
+                  />
+                </div>
+
+                <p id="mensajeRegistro" class="text-center fw-bold"></p>
+
+              </div>
+
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Cancelar
+                </button>
+
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  id="btnGuardarRegistro"
+                >
+                  Crear cuenta
+                </button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
             <footer>
                 &copy; 2026 Wallet. All rights reserved.
             </footer>
