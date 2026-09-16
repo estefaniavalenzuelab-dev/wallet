@@ -1,4 +1,4 @@
-// LOGIN.HTML
+// INDEX.HTML-login
 
 const form = document.getElementById("login");
 

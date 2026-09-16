@@ -48,7 +48,7 @@ wallet/
 │   └── js/
 │       └── script.js
 │
-├── login.html
+├── index.html
 ├── menu.html
 ├── deposit.html
 ├── sendmoney.html
@@ -88,7 +88,7 @@ Por tratarse de un proyecto Front-end educativo, no utiliza una base de datos ni
 
 1. Descargar o clonar el repositorio.
 2. Abrir la carpeta del proyecto en Visual Studio Code.
-3. Abrir `login.html` utilizando Live Server.
+3. Abrir `index.html` utilizando Live Server.
 4. Crear una cuenta o iniciar sesión.
 5. Navegar por las diferentes funcionalidades de Alke Wallet.
 
